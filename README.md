@@ -7,3 +7,5 @@ Practicing from youtube of Django-CorySchafer
 <br>
 # The github of CoreySchafer:
 `https://github.com/CoreyMSchafer/code_snippets/blob/master/Django_Blog/snippets/article.html`
+
+# Total is 17 episodes.
