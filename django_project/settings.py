@@ -122,7 +122,10 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 
-CRISPY_TEMPLATE_PACK = 'bootstrap4'
+MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
+MEDIA_URL = '/media/'  # เป็นการสร้าง folder media ขึ้นมาสำหรับไว้เก็บรูปนะ
+
+CRISPY_TEMPLATE_PACK = 'bootstrap4'  # เพิ่มอันนี้เพราะใช้ crispy ติดตั้งเพิ่มให้หน้า register ดูดีขึ้น
 
 LOGIN_REDIRECT_URL = 'blog-home'  # เพิ่มบรรทัดนี้เพื่อให้หลังจาก Login แล้ว จะ redirect มาที่หน้า home (blog-home คือ namespace ใน url ไง)
 LOGIN_URL = 'login' # เพื่อให้เวลาใครมาใส่ /profile ต่อท้าย url มันจะ redirect มาที่หน้า login แทนนะ แต่ต้องทำงานร่วมกับ @login_required ใน view.py
